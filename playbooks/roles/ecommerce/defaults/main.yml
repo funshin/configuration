@@ -16,7 +16,7 @@ ECOMMERCE_GIT_IDENTITY: !!null
 ECOMMERCE_REPOS:
   - PROTOCOL: "{{ COMMON_GIT_PROTOCOL }}"
     DOMAIN: "{{ COMMON_GIT_MIRROR }}"
-    PATH: "mohit741"
+    PATH: "{{ COMMON_GIT_PATH_ECOMMERCE }}"
     REPO: "ecommerce.git"
     VERSION: "{{ ECOMMERCE_VERSION }}"
     DESTINATION: "{{ ecommerce_code_dir }}"
