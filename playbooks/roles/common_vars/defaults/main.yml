@@ -67,6 +67,8 @@ COMMON_GIT_PROTOCOL: 'https'  # https|ssh
 COMMON_GIT_MIRROR: 'github.com' # git server hostname
 COMMON_GIT_PATH: 'edx'  # git path prefix
 
+COMMON_GIT_PATH_ECOMMERCE: 'mohit741'  # git path prefix
+
 # override this var to set a different hostname
 COMMON_HOSTNAME: ""
 COMMON_DEPLOY_HOSTNAME: ""
