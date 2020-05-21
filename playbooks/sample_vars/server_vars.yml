@@ -66,7 +66,7 @@
 #EDXAPP_LMS_NGINX_PORT: 80
 #EDXAPP_CMS_NGINX_PORT: 80
 #EDXAPP_WORKERS:
-#  lms: 2
+#  lms: 20
 #  cms: 2
 #XSERVER_GRADER_DIR: "/edx/var/xserver/data/content-mit-600x~2012_Fall"
 #XSERVER_GRADER_SOURCE: "git@github.com:/MITx/6.00x.git"
