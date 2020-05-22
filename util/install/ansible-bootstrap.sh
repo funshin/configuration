@@ -9,7 +9,7 @@
 # Can be run as follows:
 #
 # UPGRADE_OS=true CONFIGURATION_VERSION="master" \
-# bash <(curl -s https://raw.githubusercontent.com/edx/configuration/master/util/install/ansible-bootstrap.sh)
+# bash <(curl -s https://raw.githubusercontent.com/funshin/configuration/master/util/install/ansible-bootstrap.sh)
 
 set -xe
 
