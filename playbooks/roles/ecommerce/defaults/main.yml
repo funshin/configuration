@@ -2,7 +2,7 @@
 #
 # edX Configuration
 #
-# github:     https://github.com/edx/configuration
+# github:     https://github.com/funshin/configuration
 # wiki:       https://openedx.atlassian.net/wiki/display/OpenOPS
 # code style: https://openedx.atlassian.net/wiki/display/OpenOPS/Ansible+Code+Conventions
 # license:    https://github.com/edx/configuration/blob/master/LICENSE.TXT
@@ -36,7 +36,7 @@ ECOMMERCE_SECRET_KEY: 'Your secret key here'
 ECOMMERCE_LANGUAGE_CODE: 'en'
 ECOMMERCE_LANGUAGE_COOKIE_NAME: 'openedx-language-preference'
 ECOMMERCE_EDX_API_KEY: 'PUT_YOUR_API_KEY_HERE'  # This should match the value set for edxapp
-ECOMMERCE_ECOMMERCE_URL_ROOT: 'http://localhost:8002'
+ECOMMERCE_ECOMMERCE_URL_ROOT: 'http://localhost:18130'
 ECOMMERCE_LOGOUT_URL: '{{ ECOMMERCE_ECOMMERCE_URL_ROOT }}/logout/'
 ECOMMERCE_LMS_URL_ROOT: 'http://127.0.0.1:8000'
 ECOMMERCE_JWT_ALGORITHM: 'HS256'
@@ -136,14 +136,14 @@ ECOMMERCE_PAYMENT_PROCESSOR_CONFIG:
       error_url: '{{ ECOMMERCE_PAYPAL_ERROR_URL }}'
 
 # Theming
-ECOMMERCE_PLATFORM_NAME: 'Your Platform Name Here'
+ECOMMERCE_PLATFORM_NAME: 'Shiksha Academy'
 ECOMMERCE_THEME_SCSS: 'sass/themes/default.scss'
 ECOMMERCE_COMPREHENSIVE_THEME_DIRS:
   - '{{ THEMES_CODE_DIR }}/{{ ecommerce_service_name }}'
   - '{{ COMMON_APP_DIR }}/{{ ecommerce_service_name }}/{{ ecommerce_service_name }}/ecommerce/themes'
 
-ECOMMERCE_ENABLE_COMPREHENSIVE_THEMING: false
-ECOMMERCE_DEFAULT_SITE_THEME: !!null
+ECOMMERCE_ENABLE_COMPREHENSIVE_THEMING: true
+ECOMMERCE_DEFAULT_SITE_THEME: 'lagunita'
 ECOMMERCE_STATICFILES_STORAGE: 'ecommerce.theming.storage.ThemeStorage'
 
 # Celery
