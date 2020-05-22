@@ -181,8 +181,8 @@ EDXAPP_PARTNER_SUPPORT_EMAIL: ''
 # ISO-8601 formatted date string, or null
 EDXAPP_AUDIT_CERT_CUTOFF_DATE: null
 
-EDXAPP_PLATFORM_NAME: 'Your Platform Name Here'
-EDXAPP_PLATFORM_DESCRIPTION: 'Your Platform Description Here'
+EDXAPP_PLATFORM_NAME: 'Shiksha.fun Academy'
+EDXAPP_PLATFORM_DESCRIPTION: 'For anyone, anywhere, anytime'
 EDXAPP_STUDIO_NAME: 'Studio'
 EDXAPP_STUDIO_SHORT_NAME: 'Studio'
 EDXAPP_ANALYTICS_DASHBOARD_NAME: "{{ EDXAPP_PLATFORM_NAME }} Insights"
@@ -267,7 +267,7 @@ EDXAPP_ACE_CHANNEL_DEFAULT_EMAIL: 'django_email'
 EDXAPP_ACE_CHANNEL_TRANSACTIONAL_EMAIL: 'django_email'
 
 # Display a language selector in the LMS/CMS header.
-EDXAPP_SHOW_HEADER_LANGUAGE_SELECTOR: false
+EDXAPP_SHOW_HEADER_LANGUAGE_SELECTOR: true
 
 # Display a language selector in the LMS footer.
 EDXAPP_SHOW_FOOTER_LANGUAGE_SELECTOR: false
@@ -586,9 +586,9 @@ EDXAPP_CODE_JAIL_LIMITS:
 
 # Set the number of workers explicitly for lms and cms
 # Should be set to
-# EDXAPP_WORKERS:
-#   lms: <num workers>
-#   cms: <num workers>
+ EDXAPP_WORKERS:
+    lms: 20
+    cms: 2
 EDXAPP_WORKERS: !!null
 # Dashboard URL, assumes that the insights role is installed locally
 EDXAPP_ANALYTICS_DASHBOARD_URL: "http://localhost:18110/courses"
@@ -657,8 +657,8 @@ EDXAPP_CSRF_COOKIE_SECURE: false
 EDXAPP_LOGIN_REDIRECT_WHITELIST: []
 
 # E-Commerce Related Settings
-EDXAPP_ECOMMERCE_PUBLIC_URL_ROOT: "http://localhost:8002"
-EDXAPP_ECOMMERCE_API_URL: "http://localhost:8002/api/v2"
+EDXAPP_ECOMMERCE_PUBLIC_URL_ROOT: "http://localhost:18130"
+EDXAPP_ECOMMERCE_API_URL: "http://localhost:18130/api/v2"
 # TODO (CCB) Remove this after all references in edx/edx-platform have been removed.
 EDXAPP_ECOMMERCE_API_SIGNING_KEY: "{{ EDXAPP_JWT_SECRET_KEY }}"
 EDXAPP_COURSE_CATALOG_API_URL: "http://localhost:8008/api/v1"
@@ -766,7 +766,7 @@ EDXAPP_RETIREMENT_STATES:
 
 # Comprehensive Theming
 # Deprecated, maintained for backward compatibility
-EDXAPP_COMPREHENSIVE_THEME_DIR: ""
+EDXAPP_COMPREHENSIVE_THEME_DIR: "/edx/app/edxapp/edx-platform/themes/openedx-themes"
 
 # list of paths to the comprehensive theme directories
 EDXAPP_COMPREHENSIVE_THEME_DIRS:
@@ -776,15 +776,15 @@ EDXAPP_COMPREHENSIVE_THEME_DIRS:
 EDXAPP_COMPREHENSIVE_THEME_LOCALE_PATHS: []
 
 # Name of the default site theme
-EDXAPP_DEFAULT_SITE_THEME: ""
+EDXAPP_DEFAULT_SITE_THEME: "lagunita"
 EDXAPP_ENABLE_COMPREHENSIVE_THEMING: false
 
 # Git repo for the comprehensive theme (if using a comprehensive theme
 # other than the ones bundled with edx/platform)
-EDXAPP_COMPREHENSIVE_THEME_SOURCE_REPO: ""
+EDXAPP_COMPREHENSIVE_THEME_SOURCE_REPO: "https://github.com/funshin/openedx-themes.git"
 # Git branch, tag, or revision to check out from
 # EDXAPP_COMPREHENSIVE_THEME_SOURCE_REPO
-EDXAPP_COMPREHENSIVE_THEME_VERSION: ""
+EDXAPP_COMPREHENSIVE_THEME_VERSION: "master"
 
 # SAML KEYS
 EDXAPP_SOCIAL_AUTH_SAML_SP_PRIVATE_KEY: ''
